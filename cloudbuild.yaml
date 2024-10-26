@@ -2,3 +2,7 @@ steps:
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
+
+options:
+  logging: GCS_ONLY
+  logsBucket: gs://delivery-439805-logs
